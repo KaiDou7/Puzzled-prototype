@@ -1,0 +1,47 @@
+@import "../colors","../typography","../resets","../basics","../navigation","../share";
+
+.shop{
+    font-weight: 700;
+    font-size: $header-font;
+    margin: 5em auto 0;
+    width: 60%;
+    max-width: 900px;
+    min-width: 300px;
+    text-align: center;
+    line-height: 120%;
+    .home-cta{
+        margin-top: 4em;
+        display: block;
+        font-weight: 700;
+        color: white;
+        background: rgb(255,165,0);
+        background: linear-gradient(90deg, rgba(255,165,0,1) 0%, rgba(255,77,0,1) 100%);
+        transition: background 0ms ease-in-out;
+        &:hover{
+            background: $primary-color;
+        }
+    }
+}
+
+@media(max-width:560px){
+    :root{
+        font-size: 13px;
+    }
+    .logo-img{
+        width: 40%;
+    }
+
+}
+
+@media(max-width:460px){
+    .logo-text{
+        font-size: 1.8rem;
+    }
+
+}
+
+@media(max-width:400px){
+    .logo-text{
+        font-size: 1.5rem;
+    }
+}

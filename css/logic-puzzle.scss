@@ -1,0 +1,122 @@
+@import "../colors","../typography","../resets","../basics","../navigation","../share";
+
+
+.container-new{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.logic-puzzle{
+    margin-top: 8em;
+    &-header{
+        text-align: center;
+        font-size: $sub-header-font;
+    }
+    &-img{
+        width: 100%;
+        display: block;
+        margin: 2em auto 1em;
+    }
+    &-para{
+        font-size: $text-font;
+        margin: 2em 0;
+    }
+    &-sub{
+        font-size: $sub-header-font;
+        margin-bottom: 1em;
+    }
+}
+
+// .home{
+//     font-weight: 700;
+//     color: white;
+//     background: rgb(255,165,0);
+//     background: linear-gradient(90deg, rgba(255,165,0,1) 0%, rgba(255,77,0,1) 100%);
+//     transition: background 0ms ease-in-out;
+//     &:hover{
+//         background: $primary-color;
+//     }
+// }
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    //align-items: center;
+    margin-bottom: 2em;
+    .answer{
+        font-weight: 700;
+        color: white;
+        background: rgb(255,165,0);
+        background: linear-gradient(90deg, rgba(255,165,0,1) 0%, rgba(255,77,0,1) 100%);
+        transition: background 0ms ease-in-out;
+        &:hover{
+            background: $primary-color;
+        }
+    }
+    .next{
+        display: none;
+        font-weight: 700;
+        color: white;
+        background: rgb(255,165,0);
+        background: linear-gradient(90deg, rgba(255,165,0,1) 0%, rgba(255,77,0,1) 100%);
+        transition: background 0ms ease-in-out;
+        &:hover{
+            background: $primary-color;
+        }
+    }
+
+}
+
+.back-button{
+    margin: 2em 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    img{
+        height: $text-font;
+    }
+    .back{
+        font-weight: 400;
+        font-size: $text-font;
+    }
+}
+
+.solution{
+    display: none;
+    font-weight: 700;
+    color: $right-answer;
+    font-size: $text-font;
+    margin-bottom: 2em;
+}
+
+@media(max-width:560px){
+    :root{
+        font-size: 13px;
+    }
+    .logo-img{
+        width: 40%;
+    }
+
+}
+
+@media(max-width:460px){
+    .logo-text{
+        font-size: 1.8rem;
+    }
+    .buttons{
+        flex-direction: column;
+        text-align: center;
+        .cta-resets{
+            padding: 1em 1em;
+            margin: .8em 0;
+        }
+    }
+}
+
+@media(max-width:400px){
+    .logo-text{
+        font-size: 1.5rem;
+    }
+}

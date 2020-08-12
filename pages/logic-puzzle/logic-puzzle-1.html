@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- normalise css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <!-- css -->
+    <link rel="stylesheet" href="/css/logic-puzzle.css">
+    <!-- typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Puzzled Logic Puzzle</title>
+</head>
+<body>
+    <header>
+        <nav class="nav flex container">
+            <a href="/index.html" class="logo flex">
+                <img class="logo-img" src="/assets/logo.svg" alt="logo">
+                <h1 class="logo-text">Puzzled</h1>
+            </a>
+            <div class="nav-ctas flex">
+                <a href="#" class="cta-resets shop-cta">Shop</a>
+                <a href="#" class="cta-resets share-cta  web-share-cta">Share</a>
+            </div>
+        </nav>
+    </header>
+    <section class="logic-puzzle container-new">
+        <div class="back-button">
+            <a href="/index.html"><img src="/assets/back.svg" alt=""></a>
+            <a href="/index.html" class="cta-resets back">Back</a>
+        </div>
+        <h1 class="logic-puzzle-header">1. Which door is safe?</h1>
+        <img class="logic-puzzle-img" src="/assets/logic-puzzle/logic-puzzle-1.jpg" alt="">
+        <p class="logic-puzzle-para">One morning, little Mary got trapped in a castle in Costa Rica. There were 4 doors, but only one led to freedom. The doors opened up to the following:<br/><br/>
+            1. Lava that would immediately melt anyone<br/>
+            2. A killer clown that would beat any person to death<br/>
+            3. A deadly frost that would freeze her at once<br/>
+            4. Cops that would shoot any man or woman indiscriminately</p>
+        <h2 class="logic-puzzle-sub">Which door should she choose?</h2>
+        <p class="solution">Door 4.<br/><br/>
+        The cops would shoot any man or woman, but Mary isn’t an adult.</p>
+        <div class="buttons">
+            <a class="cta-resets answer">Answer</a>
+            <a href="/pages/logic-puzzle/logic-puzzle-2.html" class="cta-resets next">Next</a>
+        </div>
+    </section>
+    <!-- share -->
+    <div class="thank-you">
+        <img src="/assets/detective-puzzle/right.svg" alt="">
+        <h2 class="thank-you-message">Thank You For Sharing!!!</h2>
+    </div>
+    
+    <div class="web-share">
+        <div class="tagline">
+            <h3>Share with your friends!!!</h3>
+            <img src="/assets/close.svg" alt="close">
+        </div>
+        <div class="a2a_kit a2a_kit_size_32 a2a_default_style share-links">
+            <a class="a2a_button_facebook share-link"></a>
+            <a class="a2a_button_whatsapp share-link"></a>
+            <a class="a2a_button_twitter share-link"></a>
+            <a class="a2a_button_telegram share-link"></a>
+            <a class="a2a_button_email share-link"></a>
+            <a class="a2a_button_google_gmail share-link"></a>
+            <a class="a2a_button_pinterest share-link"></a>
+            <a class="a2a_button_reddit share-link"></a>
+            <a class="a2a_dd share-link" href="https://www.addtoany.com/share"></a>
+        </div>
+    </div>
+    <div class="overlay"></div>
+
+    <!-- webshare -->
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+    <script src="/js/share.js"></script>
+
+    <script src="/js/logic-puzzle.js"></script>
+</body>
+</html>
+

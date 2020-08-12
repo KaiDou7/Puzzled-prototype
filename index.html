@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- normalise css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <!-- css -->
+    <link rel="stylesheet" href="main.css">
+    <!-- typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Puzzled</title>
+</head>
+<body>
+    <header>
+        <nav class="nav flex container">
+            <a href="/index.html" class="logo flex">
+                <img class="logo-img" src="/assets/logo.svg" alt="logo">
+                <h1 class="logo-text">Puzzled</h1>
+            </a>
+            <div class="nav-ctas flex">
+                <a href="/pages/shop.html" class="cta-resets shop-cta">Shop</a>
+                <a href="#" class="cta-resets share-cta web-share-cta">Share</a>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <img class="background-img-1" src="assets/puzzle-piece-orange.svg" alt="">
+        <img class="background-img-2" src="assets/puzzle-piece-orange.svg" alt="">
+        <img class="background-img-3" src="assets/puzzle-piece-orange.svg" alt="">
+        <img class="background-img-4" src="assets/puzzle-piece-blue.svg" alt="">
+        <img class="background-img-5" src="assets/puzzle-piece-blue.svg" alt="">
+        <img class="background-img-6" src="assets/puzzle-piece-blue.svg" alt="">
+        <h1 class="hero-header">Small<br/>Pieces<br/>Big<br/>Picture</h1>
+        <div class="hero-ctas flex">
+            <a href="#" class="cta-resets share-cta web-share-cta">Share</a>
+            <a href="/pages/shop.html" class="cta-resets shop-cta">Shop</a>
+        </div>
+        <a href="#latest-puzzles" class="scroll-cta">Online puzzles</a>
+        <div class="scroll-img">
+            <img src="assets/scroll.svg" alt="scroll down">
+        </div>
+    </section>
+    <main id="latest-puzzles" class="latest-puzzles container">
+        <h2 class="latest-puzzles-header">Latest Puzzles</h2>
+        <div class="latest-puzzle">
+            <img class="latest-puzzle-img" src="assets/latest-thumbnails/easy.jpg">
+            <div class="latest-puzzle-info">
+                <h3 class="latest-puzzle-header">Logic Quiz</h3>
+                <p class="latest-puzzle-brief">See if you know the answers for the 10 logic based questions and get that brain working!!!</p>
+                <p class="difficulty easy">Difficulty: Easy</p>
+                <div class="puzzle-ctas">
+                    <a href="/pages/logic-puzzle/logic-puzzle-1.html" class="cta-resets play-cta">Play</a>
+                    <a href="#" class="cta-resets share-puzzle-cta web-share-cta">Share</a>
+                </div>
+            </div>
+        </div>
+        <div class="latest-puzzle">
+            <img class="latest-puzzle-img" src="assets/latest-thumbnails/medium.jpg" alt="">
+            <div class="latest-puzzle-info">
+                <h3 class="latest-puzzle-header">16 sticks in 5x5</h3>
+                <p class="latest-puzzle-brief">Put 16 sticks so that they do not touch each other</p>
+                <p class="difficulty medium">Difficulty: Medium</p>
+                <div class="puzzle-ctas">
+                    <a href="/pages/sticks-16/sticks-16.html" class="cta-resets play-cta">Play</a>
+                    <a href="#" class="cta-resets share-puzzle-cta web-share-cta">Share</a>
+                </div>
+            </div>
+        </div>
+        <div class="latest-puzzle">
+            <img class="latest-puzzle-img" src="assets/latest-thumbnails/hard.jpg" alt="">
+            <div class="latest-puzzle-info">
+                <h3 class="latest-puzzle-header">Detective Quiz</h3>
+                <p class="latest-puzzle-brief">Answer all the 10 questions of pure deduction and you might be the next great detective in the rough</p>
+                <p class="difficulty hard">Difficulty: Hard</p>
+                <div class="puzzle-ctas">
+                    <a href="/pages/detective-puzzle/detective-puzzle-1.html" class="cta-resets play-cta">Play</a>
+                    <a href="#" class="cta-resets share-puzzle-cta web-share-cta">Share</a>
+                </div>
+            </div>
+        </div>
+
+        
+    </main>
+    <!-- share -->
+    <div class="thank-you">
+        <img src="/assets/detective-puzzle/right.svg" alt="">
+        <h2 class="thank-you-message">Thank You For Sharing!!!</h2>
+    </div>
+    
+    <div class="web-share">
+        <div class="tagline">
+            <h3>Share with your friends!!!</h3>
+            <img src="/assets/close.svg" alt="close">
+        </div>
+        <div class="a2a_kit a2a_kit_size_32 a2a_default_style share-links">
+            <a class="a2a_button_facebook share-link"></a>
+            <a class="a2a_button_whatsapp share-link"></a>
+            <a class="a2a_button_twitter share-link"></a>
+            <a class="a2a_button_telegram share-link"></a>
+            <a class="a2a_button_email share-link"></a>
+            <a class="a2a_button_google_gmail share-link"></a>
+            <a class="a2a_button_pinterest share-link"></a>
+            <a class="a2a_button_reddit share-link"></a>
+            <a class="a2a_dd share-link" href="https://www.addtoany.com/share"></a>
+        </div>
+    </div>
+    <div class="overlay"></div>
+
+    <!-- webshare -->
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+    <script src="/js/share.js"></script>
+</body>
+</html>

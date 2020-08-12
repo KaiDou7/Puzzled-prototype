@@ -1,0 +1,252 @@
+body, button, input {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  color: #0f0f0f;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+.cta-resets {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  color: #0f0f0f;
+  font-size: 1.25rem;
+  padding: 0.6em 2.4em;
+  border-radius: 10rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.nav {
+  min-height: 10vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.logo-text {
+  color: #ffa500;
+  font-size: 2.185rem;
+}
+
+.nav-ctas {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.share-cta {
+  background-color: #0485E1;
+  color: white;
+  font-weight: 700;
+  -webkit-transition: background-color 500ms ease-in-out;
+  transition: background-color 500ms ease-in-out;
+}
+
+.share-cta:hover {
+  background-color: #00d1ff;
+}
+
+.web-share {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 101;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 10px;
+  background-color: white;
+  min-width: 300px;
+  width: 50%;
+}
+
+.web-share .share-links {
+  padding: 2em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.web-share .share-link {
+  margin: 2em;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.overlay {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+.tagline {
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tagline h3 {
+  font-size: 1.875rem;
+}
+
+.tagline img {
+  width: 15%;
+  max-width: 50px;
+  min-width: 30px;
+  cursor: pointer;
+}
+
+.thank-you {
+  display: none !important;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 101;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 10px;
+  background-color: white;
+  min-width: 300px;
+  width: 50%;
+  padding: 4em 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.thank-you img {
+  padding: .5em;
+}
+
+.thank-you h2 {
+  padding: .5em;
+}
+
+.shop {
+  font-weight: 700;
+  font-size: 2.185rem;
+  margin: 5em auto 0;
+  width: 60%;
+  max-width: 900px;
+  min-width: 300px;
+  text-align: center;
+  line-height: 120%;
+}
+
+.shop .home-cta {
+  margin-top: 4em;
+  display: block;
+  font-weight: 700;
+  color: white;
+  background: orange;
+  background: -webkit-gradient(linear, left top, right top, from(orange), to(#ff4d00));
+  background: linear-gradient(90deg, orange 0%, #ff4d00 100%);
+  -webkit-transition: background 0ms ease-in-out;
+  transition: background 0ms ease-in-out;
+}
+
+.shop .home-cta:hover {
+  background: #ffa500;
+}
+
+@media (max-width: 560px) {
+  :root {
+    font-size: 13px;
+  }
+  .logo-img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 460px) {
+  .logo-text {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo-text {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=shop.css.map */

@@ -1,0 +1,38 @@
+//nav
+header{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.nav{
+    min-height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    align-items: center;
+    text-decoration: none;
+    &-text{
+        color: $primary-color;
+        font-size: $header-font;
+    }
+}
+
+.nav-ctas{
+    align-items: center;
+}
+
+.share-cta{
+    background-color: $secondary-color;
+    color: white;
+    font-weight: 700;
+    transition: background-color 500ms ease-in-out;
+    &:hover{
+        background-color: #00d1ff;
+    }
+}

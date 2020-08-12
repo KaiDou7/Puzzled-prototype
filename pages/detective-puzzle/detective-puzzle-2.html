@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- normalise css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <!-- css -->
+    <link rel="stylesheet" href="/css/detective-puzzle.css">
+    <!-- typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Puzzled Detective Puzzle</title>
+</head>
+<body>
+    <header>
+        <nav class="nav flex container">
+            <a href="/index.html" class="logo flex">
+                <img class="logo-img" src="/assets/logo.svg" alt="logo">
+                <h1 class="logo-text">Puzzled</h1>
+            </a>
+            <div class="nav-ctas flex">
+                <a href="#" class="cta-resets shop-cta">Shop</a>
+                <a href="#" class="cta-resets share-cta web-share-cta">Share</a>
+            </div>
+        </nav> 
+    </header>
+    <section class="detective-puzzle container-new">
+        <div class="back-button">
+            <a href="/pages/detective-puzzle/detective-puzzle-1.html"><img src="/assets/back.svg" alt=""></a>
+            <a href="/pages/detective-puzzle/detective-puzzle-1.html" class="cta-resets back">Back</a>
+        </div>
+        <h1 class="detective-puzzle-header">2. Famous chemist murdered</h1>
+        <img class="detective-puzzle-img" src="https://media.proprofs.com/images/QM/user_images/1826446/New%20Project%20(1)(3).jpg" alt="">
+        <p class="detective-puzzle-para">A very famous chemist was found murdered in his kitchen today. The police have narrowed it down to six suspects. They know it was a two-man job. Their names: Felice, Maxwell, Archibald, Nicolas, Jordan, and Xavier. A note was also found with the body: '26-3-58/28-27-57-16′.</p>
+        <h2 class="detective-puzzle-sub">Who are the killers?</h2>
+        <div class="buttons">
+            <a class="cta-resets option">Jordan & Xavier</a>
+            <a class="cta-resets option right">Felice & Nicolas</a>
+            <a class="cta-resets option">Maxwell & Archibald</a>
+            <a class="cta-resets option">Nicolas & Xavier</a>
+        </div>
+        <a href="/pages/detective-puzzle/detective-puzzle-3.html" class="cta-resets next">Next</a>
+        <div class="result">
+            <img class="right-img" src="/assets/detective-puzzle/right.svg" alt="right Answer">
+            <img class="wrong-img" src="/assets/detective-puzzle/wrong.svg" alt="wrong Answer">
+        </div>
+        <p class="solution">Answer:Felice & Nicolas<br/><br/>The victim is a famous chemist so if you look at the note very carefully. You will notice that the numbers written corresponding to the atomic numbers on the periodic table of elements.
+        In Periodic Table, we have following.<br/><br/>
+
+        The atomic number of Fe is 26.<br/>
+        The atomic number of Li is 3.<br/>
+        The atomic number of Ce is 58.<br/>
+        The atomic number of Ni is 28.<br/>
+        The atomic number of Co is 27.<br/>
+        The atomic number of La is 57.<br/>
+        The atomic number of S is 16.<br/>
+
+        “Fe(Iron) – Li(Lithium) – Ce(Cerium)” -> Felice
+        “Ni(Nickel) – Co(Cobalt) – La(Lanthanum) – S(Sulphur)” -> Nicolas<br/><br/>
+
+        Hence, Felice and Nicolas are the murderers. </p>
+    </section>
+    <!-- share -->
+    <div class="thank-you">
+        <img src="/assets/detective-puzzle/right.svg" alt="">
+        <h2 class="thank-you-message">Thank You For Sharing!!!</h2>
+    </div>
+    
+    <div class="web-share">
+        <div class="tagline">
+            <h3>Share with your friends!!!</h3>
+            <img src="/assets/close.svg" alt="close">
+        </div>
+        <div class="a2a_kit a2a_kit_size_32 a2a_default_style share-links">
+            <a class="a2a_button_facebook share-link"></a>
+            <a class="a2a_button_whatsapp share-link"></a>
+            <a class="a2a_button_twitter share-link"></a>
+            <a class="a2a_button_telegram share-link"></a>
+            <a class="a2a_button_email share-link"></a>
+            <a class="a2a_button_google_gmail share-link"></a>
+            <a class="a2a_button_pinterest share-link"></a>
+            <a class="a2a_button_reddit share-link"></a>
+            <a class="a2a_dd share-link" href="https://www.addtoany.com/share"></a>
+        </div>
+    </div>
+    <div class="overlay"></div>
+
+    <!-- webshare -->
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+    <script src="/js/share.js"></script>
+    
+    <script src="/js/detective-puzzle.js"></script>
+</body>
+</html>
